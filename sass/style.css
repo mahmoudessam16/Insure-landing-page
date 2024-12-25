@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+body {
+  font-family: "Karla", serif;
+}
+body header {
+  position: relative;
+  z-index: 10;
+}
+body header .mobile-menu {
+  position: fixed;
+  top: 0px;
+  left: 100%;
+  z-index: 10;
+  background-color: rgb(43, 39, 47);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  z-index: -1;
+}
+body header .mobile-menu ul {
+  list-style: none;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+body header .mobile-menu ul li {
+  letter-spacing: 1px;
+  margin: 15px 0;
+  text-align: center;
+  cursor: pointer;
+}
+body header .mobile-menu ul button {
+  display: block;
+  margin: auto;
+  width: 250px;
+  padding: 10px 0;
+  border: 1px solid rgb(250, 250, 250);
+  background-color: transparent;
+  color: rgb(250, 250, 250);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  cursor: pointer;
+}
+body header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+body header .container nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+body header .container nav ul li {
+  padding: 0 15px;
+  font-size: 14px;
+  color: rgb(131, 125, 135);
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+body header .container nav ul li:hover {
+  color: rgb(45, 38, 64);
+}
+body header .container nav ul button {
+  padding: 8px 25px;
+  margin-left: 20px;
+  background-color: white;
+  border: 2px solid rgb(45, 38, 64);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body header .container nav ul button:hover {
+  background-color: rgb(45, 38, 64);
+  color: rgb(250, 250, 250);
+}
+body header .container .close {
+  display: none;
+  cursor: pointer;
+}
+body header .container .hamburger {
+  display: none;
+}
+body section.landing {
+  background-color: rgb(45, 38, 64);
+  height: 600px;
+  padding: 100px 0 100px 0;
+}
+body section.landing .container {
+  display: flex;
+  gap: 25px;
+}
+body section.landing .container .info {
+  flex: 1;
+}
+body section.landing .container .info .line {
+  width: 150px;
+  height: 1px;
+  background-color: white;
+}
+body section.landing .container .info h1 {
+  font-size: 65px;
+  line-height: 0.9;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  color: rgb(250, 250, 250);
+  margin: 70px 20px 20px 0;
+}
+body section.landing .container .info p {
+  font-size: 16px;
+  color: #eee;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+body section.landing .container .info button {
+  padding: 13px 30px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid white;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body section.landing .container .info button:hover {
+  background-color: white;
+  color: rgb(45, 38, 64);
+}
+body section.landing .container .image {
+  flex: 1;
+}
+body section.landing .container .image img {
+  width: 100%;
+}
+body section.differ {
+  padding: 250px 0 90px 0;
+}
+body section.differ .line {
+  width: 120px;
+  height: 1px;
+  background-color: rgb(45, 38, 64);
+}
+body section.differ h2 {
+  font-size: 60px;
+  font-family: "DM Serif Display", serif;
+  letter-spacing: 0.7px;
+  font-weight: 400;
+  margin: 35px 0;
+}
+body section.differ .plans {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+body section.differ .plans .plan h3 {
+  font-family: "DM Serif Display", serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 25px;
+  margin: 28px 0 18px 0;
+  color: rgb(45, 38, 64);
+}
+body section.differ .plans .plan p {
+  color: rgb(131, 125, 135);
+  line-height: 1.4;
+}
+body section.find {
+  padding: 100px 0;
+}
+body section.find .container {
+  background-color: rgb(45, 38, 64);
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+body section.find .container h2 {
+  flex: 1;
+  font-size: 45px;
+  font-family: "DM Serif Display", serif;
+  color: rgb(250, 250, 250);
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+body section.find .container div {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body section.find .container div button {
+  display: block;
+  width: 150px;
+  padding: 12px 0;
+  border: 1px solid rgb(250, 250, 250);
+  background-color: transparent;
+  color: rgb(250, 250, 250);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body section.find .container div button:hover {
+  background-color: rgb(250, 250, 250);
+  color: rgb(45, 38, 64);
+}
+body footer {
+  background-color: rgb(250, 250, 250);
+}
+body footer .container {
+  padding: 70px 0;
+}
+body footer .container .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer .container .head .logo img {
+  cursor: pointer;
+}
+body footer .container .head .icons img {
+  margin-left: 10px;
+  cursor: pointer;
+}
+body footer .container .line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(131, 125, 135);
+  margin: 40px 0;
+}
+body footer .container .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+body footer .container .links ul {
+  flex: 1;
+  justify-content: flex-start;
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 13px;
+}
+body footer .container .links ul li {
+  margin: 14px 0;
+  color: rgb(43, 39, 47);
+  cursor: pointer;
+}
+body footer .container .links ul li:hover {
+  text-decoration: underline;
+}
+body footer .container .links ul li.headline {
+  color: rgb(131, 125, 135);
+  margin-bottom: 35px;
+}
+
+@media (max-width: 850px) {
+  .container {
+    width: 92%;
+  }
+  body header .mobile-menu {
+    justify-content: center;
+  }
+  body header .container {
+    padding: 14px 0;
+  }
+  body header .container nav {
+    display: none;
+  }
+  body header .container .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  body header .container .logo {
+    width: 90px;
+  }
+  body section.landing {
+    height: auto;
+    padding: 0px 0 50px 0;
+  }
+  body section.landing::before {
+    display: none;
+  }
+  body section.landing .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  body section.landing .container .info {
+    text-align: center;
+  }
+  body section.landing .container .info .line {
+    display: none;
+  }
+  body section.landing .container .info h1 {
+    font-size: 45px;
+    margin: 10px;
+  }
+  body section.landing .container .info p {
+    font-size: 14px;
+    margin: 10px;
+  }
+  body section.landing .container .image {
+    flex: 1;
+  }
+  body section.landing .container .image img {
+    max-width: 100%;
+  }
+  body section.differ {
+    padding: 100px 0;
+    text-align: center;
+    gap: 40px;
+  }
+  body section.differ .line {
+    margin: auto;
+  }
+  body section.differ h2 {
+    font-size: 40px;
+  }
+  body section.differ .plans {
+    flex-direction: column;
+    text-align: center;
+  }
+  body section.find {
+    padding: 0 0 100px 0;
+  }
+  body section.find .container {
+    padding: 40px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+  body section.find .container div {
+    justify-content: center;
+  }
+  body footer .container {
+    text-align: center;
+  }
+  body footer .container .head {
+    flex-direction: column;
+    justify-content: center;
+  }
+  body footer .container .head .icons {
+    margin-top: 20px;
+  }
+  body footer .container .line {
+    margin: 20px 0;
+  }
+  body footer .container .links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
